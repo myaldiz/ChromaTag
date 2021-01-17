@@ -115,3 +115,12 @@ Some toy data is provided with the repository to ensure things are running corre
 2. [Download Starter Data In-Plane Rotation](https://uofi.box.com/shared/static/e4tv77nv0fshek6uasi6v0lr7ry5tt5k.zip)  
 3. [Download Development Data In-Plane Rotation](https://uofi.box.com/shared/static/v9rrv8iny4ox1mky5btiw8d9fkrelp7m.zip)  
 4. [Download Development Data Out-Of-Plane Rotation](https://uofi.box.com/shared/static/7gekssc211yc2z52r69m9q2za86pm0bi.zip)  
+
+---
+
+# VCLAB MUSTAFA BERK YALDIZ Modifications
+
+Docker:
+``
+docker build -t chroma-env -f Docker/Dockerfile .
+``

@@ -837,7 +837,7 @@ void JMD::JMD_ChromaTag_Decode::DEBUG_ShowLAB(cv::Mat &image_param)
     cv::Mat ImB;
     
     //convert
-    cv::cvtColor(image_param,ImLAB,CV_BGR2Lab);
+    cv::cvtColor(image_param,ImLAB,cv::COLOR_BGR2Lab);
     
     //channels
     cv::extractChannel(ImLAB,ImL,0);

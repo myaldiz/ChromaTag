@@ -393,7 +393,7 @@ int main( int argc, char **argv )
 
                     //convert
                     RGB = image(cv::Rect(u,v,1,1));
-                    cv::cvtColor(RGB,LAB,CV_BGR2Lab);
+                    cv::cvtColor(RGB,LAB,cv::COLOR_BGR2Lab);
                     
                     //value
                     cv::Vec3b lab = LAB.at<cv::Vec3b>(0,0);

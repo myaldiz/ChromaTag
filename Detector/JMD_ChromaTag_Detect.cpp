@@ -1717,17 +1717,17 @@ void JMD::JMD_ChromaTag_Detect::Private_Refine_Corners( cv::Mat &image_param )
 				switch(curr_seg->myRingColor)
 				{
 					case RING_COLOR_REDGREEN: 
-						cv::cvtColor(patch,cpatch,CV_BGR2Lab); 
+						cv::cvtColor(patch,cpatch,cv::COLOR_BGR2Lab); 
 						cv::extractChannel(cpatch,cpatch,1); 
 						break;
 					case RING_COLOR_GREENRED: break;
 					case RING_COLOR_REDBLACK: break;
 					case RING_COLOR_GREENBLACK: 
-						cv::cvtColor(patch,cpatch,CV_BGR2Lab); 
+						cv::cvtColor(patch,cpatch,cv::COLOR_BGR2Lab); 
 						cv::extractChannel(cpatch,cpatch,0); 
 						break;
 					case RING_COLOR_BLACKWHITE:
-						cv::cvtColor(patch,cpatch,CV_BGR2Lab);
+						cv::cvtColor(patch,cpatch,cv::COLOR_BGR2Lab);
 						cv::extractChannel(cpatch,cpatch,0); 
 						break;
 					default: std::cout << "BAD RING COLOR: " << curr_seg->myRingColor << std::endl; continue; // should never be here

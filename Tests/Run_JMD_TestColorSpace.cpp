@@ -142,7 +142,7 @@ class Handler
 			cv::Mat ImB;
 			
 			//convert
-			cv::cvtColor(image,ImLAB,CV_BGR2Lab);
+			cv::cvtColor(image,ImLAB,cv::COLOR_BGR2Lab);
 			
 			//channels
 			cv::extractChannel(ImLAB,ImL,0);
@@ -212,7 +212,7 @@ void Process_Images(std::vector<std::string> &ImageList)
 			cv::Mat ImB;
 			
 			//convert
-			cv::cvtColor(image,ImLAB,CV_BGR2Lab);
+			cv::cvtColor(image,ImLAB,cv::COLOR_BGR2Lab);
 			
 			//channels
 			cv::extractChannel(ImLAB,ImL,0);
