@@ -6,12 +6,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     	libjpeg-dev libpng-dev x11-apps v4l-utils unzip ffmpeg \
 		libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev \
         libgtk2.0-dev libavcodec-dev libavformat-dev libswscale-dev python-dev \
-        python-numpy python3-dev python3-numpy python3-pip\
+        python-numpy python3-dev python3-numpy python3-pip python3-setuptools \
         libtbb2 libtbb-dev  libtiff-dev libdc1394-22-dev \
 		libfreeimage-dev libgflags-dev \
 		qtbase5-dev libqt5opengl5-dev libcgal-dev \
 		libglfw3-dev libgif-dev libpango1.0-dev \
-        liblcm-dev liblcm-bin \
+        liblcm-dev liblcm-bin libcanberra-gtk-module libcanberra-gtk3-module\
 	&& apt-get install -y --no-install-recommends lsb-release less udev \
   	&& rm -rf /var/lib/apt/lists/*
 
