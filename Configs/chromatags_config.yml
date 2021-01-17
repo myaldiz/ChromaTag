@@ -12,7 +12,7 @@ DebugLevel: 0
 Subsample: 4
 
 # Detect Options
-RefineCornersLevel: 1 #1 = yes, 2 = subpixel accuracy
+RefineCornersLevel: 2 #1 = yes, 2 = subpixel accuracy
 
 # Decode Options
 UseRingsForHomography: 0 #USE_RINGS_OUTER=0, USE_RINGS_ALL=1
