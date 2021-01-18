@@ -630,6 +630,19 @@ void JMD::JMD_ChromaTag_Decode::Private_Decode(cv::Mat &image_param)
             curr_detection->IsCode  = true;
             curr_detection->TagBits = myNumHorizontalBits * myNumHorizontalBits;
             curr_detection->TagCode = found_code->myH0Code;
+            // !!!!!! Copied from the corner detection part above !!!!!!
+            std::cout << "Corner points:" << endl;
+            for(int rit = 1; rit <= myNumRingsToUse; rit++)
+            {
+                curr_ring = curr_borders->at( curr_borders->size() - rit );
+                for(TagBorderRing::iterator sit = curr_ring->begin(); sit != curr_ring->end(); ++sit)
+                {
+                    curr_seg = *sit;
+                    std::cout << cv::Point2f( curr_seg->myLine.Point1()->U(), curr_seg->myLine.Point1()->V() ) << endl;
+                }
+            }
+            std::cout << Detected Tag: << endl;
+            std::cout << curr_detection -> TagCode << endl;
         }
         
 		//clear tag points
