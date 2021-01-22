@@ -641,7 +641,7 @@ void JMD::JMD_ChromaTag_Decode::Private_Decode(cv::Mat &image_param)
                     std::cout << cv::Point2f( curr_seg->myLine.Point1()->U(), curr_seg->myLine.Point1()->V() ) << endl;
                 }
             }
-            std::cout << Detected Tag: << endl;
+            std::cout << "Detected Tag:" << endl;
             std::cout << curr_detection -> TagCode << endl;
         }
         
