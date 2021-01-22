@@ -178,8 +178,8 @@ std::string Log_Detections(JMD_ChromaTag_Collection *detections,std::string seed
 		if( !(curr_detection->IsActive) ) { break; }
 		
 		//add current detection ID
-		log_string += myWriter.ToString(DetectionSize);
-		log_string += " ";
+		// log_string += myWriter.ToString(DetectionSize);
+		// log_string += " ";
 		
 		/*--- populate corners for detections ---*/
 		
@@ -209,8 +209,8 @@ std::string Log_Detections(JMD_ChromaTag_Collection *detections,std::string seed
 		/*--- populate codes for detections ---*/
 		
 		//has code?
-		log_string += myWriter.ToString( curr_detection->IsCode );
-		log_string += " ";
+		// log_string += myWriter.ToString( curr_detection->IsCode );
+		// log_string += " ";
 		
 		//current code
 		log_string += myWriter.ToString( curr_detection->TagCode );
@@ -222,19 +222,19 @@ std::string Log_Detections(JMD_ChromaTag_Collection *detections,std::string seed
 		/*--- populate pose for detections ---*/
 		
 		//has pose?
-		log_string += myWriter.ToString( curr_detection->IsPose );
-		log_string += " ";
+		// log_string += myWriter.ToString( curr_detection->IsPose );
+		// log_string += " ";
 		
-		//translation
-		log_string += myWriter.ToString( curr_detection->TagTranslation[0] ); log_string += " ";
-		log_string += myWriter.ToString( curr_detection->TagTranslation[1] ); log_string += " ";
-		log_string += myWriter.ToString( curr_detection->TagTranslation[2] ); log_string += " ";
+		// //translation
+		// log_string += myWriter.ToString( curr_detection->TagTranslation[0] ); log_string += " ";
+		// log_string += myWriter.ToString( curr_detection->TagTranslation[1] ); log_string += " ";
+		// log_string += myWriter.ToString( curr_detection->TagTranslation[2] ); log_string += " ";
 		
-		//rotation
-		log_string += myWriter.ToString( curr_detection->TagRotation[0] ); log_string += " ";
-		log_string += myWriter.ToString( curr_detection->TagRotation[1] ); log_string += " ";
-		log_string += myWriter.ToString( curr_detection->TagRotation[2] ); log_string += " ";
-		log_string += myWriter.ToString( curr_detection->TagRotation[3] ); log_string += " ";
+		// //rotation
+		// log_string += myWriter.ToString( curr_detection->TagRotation[0] ); log_string += " ";
+		// log_string += myWriter.ToString( curr_detection->TagRotation[1] ); log_string += " ";
+		// log_string += myWriter.ToString( curr_detection->TagRotation[2] ); log_string += " ";
+		// log_string += myWriter.ToString( curr_detection->TagRotation[3] ); log_string += " ";
 		
 		/*- end populate pose for detections -*/
 		

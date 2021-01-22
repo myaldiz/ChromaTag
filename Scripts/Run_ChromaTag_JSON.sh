@@ -1,0 +1,1 @@
+sh Run_ChromaTag.sh && python3 dump_json.py
